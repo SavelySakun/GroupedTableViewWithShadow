@@ -70,9 +70,9 @@
 		FC8AB13B26075FBA00BF5AA4 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				FC8AB1402607603400BF5AA4 /* Cell.swift */,
 				FC8AB12A26075F0E00BF5AA4 /* ViewController.swift */,
 				FC8AB20D26076C7A00BF5AA4 /* SectionView.swift */,
+				FC8AB1402607603400BF5AA4 /* Cell.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";

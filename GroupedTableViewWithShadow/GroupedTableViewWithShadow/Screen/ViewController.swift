@@ -22,10 +22,9 @@ class ViewController: UIViewController {
 
 		tableView.dataSource = self
 		tableView.delegate = self
-		
-		tableView.layer.masksToBounds = false
 
-		tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 1)) // hides empty cells
+		tableView.layer.masksToBounds = false // important
+		tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 1))
 
 		view.addSubview(tableView)
 		tableView.translatesAutoresizingMaskIntoConstraints = false
