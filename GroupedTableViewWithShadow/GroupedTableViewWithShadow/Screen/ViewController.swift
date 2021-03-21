@@ -22,19 +22,19 @@ class ViewController: UIViewController {
 
 		tableView.dataSource = self
 		tableView.delegate = self
+		
+		tableView.layer.masksToBounds = false
 
 		tableView.tableFooterView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 1)) // hides empty cells
-
-		tableView.layer.masksToBounds = false
 
 		view.addSubview(tableView)
 		tableView.translatesAutoresizingMaskIntoConstraints = false
 
 		NSLayoutConstraint.activate([
 			tableView.topAnchor.constraint(equalTo: view.topAnchor),
-			tableView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20),
+			tableView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 24),
 			tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-			tableView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20)
+			tableView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24)
 		])
 	}
 

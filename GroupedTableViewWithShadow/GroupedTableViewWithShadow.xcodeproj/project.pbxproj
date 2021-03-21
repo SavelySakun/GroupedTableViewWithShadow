@@ -15,7 +15,6 @@
 		FC8AB13326075F0F00BF5AA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8AB13126075F0F00BF5AA4 /* LaunchScreen.storyboard */; };
 		FC8AB1412607603400BF5AA4 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8AB1402607603400BF5AA4 /* Cell.swift */; };
 		FC8AB20E26076C7A00BF5AA4 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8AB20D26076C7A00BF5AA4 /* SectionView.swift */; };
-		FC8AB21126076E4500BF5AA4 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8AB21026076E4500BF5AA4 /* TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		FC8AB13426075F0F00BF5AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC8AB1402607603400BF5AA4 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		FC8AB20D26076C7A00BF5AA4 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
-		FC8AB21026076E4500BF5AA4 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +73,6 @@
 				FC8AB1402607603400BF5AA4 /* Cell.swift */,
 				FC8AB12A26075F0E00BF5AA4 /* ViewController.swift */,
 				FC8AB20D26076C7A00BF5AA4 /* SectionView.swift */,
-				FC8AB21026076E4500BF5AA4 /* TableView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -163,7 +160,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC8AB12B26075F0E00BF5AA4 /* ViewController.swift in Sources */,
-				FC8AB21126076E4500BF5AA4 /* TableView.swift in Sources */,
 				FC8AB1412607603400BF5AA4 /* Cell.swift in Sources */,
 				FC8AB20E26076C7A00BF5AA4 /* SectionView.swift in Sources */,
 				FC8AB12726075F0E00BF5AA4 /* AppDelegate.swift in Sources */,

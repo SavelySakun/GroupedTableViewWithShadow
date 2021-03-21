@@ -13,6 +13,7 @@ class Cell: UITableViewCell {
 	override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
 
+		backgroundColor = .clear
 		configureCell()
 	}
 
@@ -23,11 +24,12 @@ class Cell: UITableViewCell {
 	override func layoutSubviews() {
 		super.layoutSubviews()
 
+		contentView.backgroundColor = .white
 		setShadow()
 	}
 
 	private func configureCell() {
-		let padding: CGFloat = 12.0
+		let padding: CGFloat = 16.0
 		contentView.addSubview(label)
 		label.translatesAutoresizingMaskIntoConstraints = false
 		NSLayoutConstraint.activate([
@@ -45,15 +47,14 @@ class Cell: UITableViewCell {
 	}
 }
 
-// Shadow configuration helpers
+// Shadow configuration
 extension Cell {
 	func setShadow() {
 
-		let cornerRadius: CGFloat = 12
+		let cornerRadius: CGFloat = 8
 		let offsetValue: CGFloat = 20.0
 		var shadowOffset = CGSize(width: 0, height: -offsetValue)
 		var shadowRect = contentView.frame
-
 		let isSingleRow = isFirstRow && isLastRow
 
 		if isSingleRow {
@@ -61,6 +62,7 @@ extension Cell {
 			roundCornersOfView(contentView,
 												 corners:[.bottomLeft, .bottomRight, .topLeft, .topRight],
 												 radius: cornerRadius)
+
 		} else {
 			if isFirstRow {
 				shadowRect = CGRect(x: 0, y: 0,
@@ -80,15 +82,11 @@ extension Cell {
 				roundCornersOfView(contentView,
 													 corners: [.bottomLeft, .bottomRight],
 													 radius: cornerRadius)
+
 			}
 		}
 
 		let shadowPath = CGPath(rect: shadowRect, transform: nil)
-
-		clipsToBounds = false
-		contentView.clipsToBounds = false
-		contentView.layer.masksToBounds = false
-
 		addShadowTo(contentView, offset: shadowOffset, shadowPath: shadowPath)
 	}
 
@@ -96,7 +94,7 @@ extension Cell {
 
 		view.layer.masksToBounds = false
 		view.layer.shadowColor = UIColor.lightGray.cgColor
-		view.layer.shadowOpacity = 1
+		view.layer.shadowOpacity = 0.4
 		view.layer.shadowOffset = offset ?? .zero
 		view.layer.shadowRadius = 8
 		if let shadowPath = shadowPath {
@@ -106,7 +104,7 @@ extension Cell {
 
 }
 
-// Round corners helper
+// Round corners
 extension Cell {
 
 	enum CornerPosition {
@@ -131,8 +129,8 @@ extension Cell {
 			}
 		}
 		view.clipsToBounds = true
-		layer.cornerRadius = radius
-		layer.maskedCorners = maskedCorners
+		view.layer.cornerRadius = radius
+		view.layer.maskedCorners = maskedCorners
 	}
 
 }
