@@ -13,6 +13,9 @@
 		FC8AB12E26075F0E00BF5AA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8AB12C26075F0E00BF5AA4 /* Main.storyboard */; };
 		FC8AB13026075F0F00BF5AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC8AB12F26075F0F00BF5AA4 /* Assets.xcassets */; };
 		FC8AB13326075F0F00BF5AA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8AB13126075F0F00BF5AA4 /* LaunchScreen.storyboard */; };
+		FC8AB1412607603400BF5AA4 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8AB1402607603400BF5AA4 /* Cell.swift */; };
+		FC8AB20E26076C7A00BF5AA4 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8AB20D26076C7A00BF5AA4 /* SectionView.swift */; };
+		FC8AB21126076E4500BF5AA4 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8AB21026076E4500BF5AA4 /* TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		FC8AB12F26075F0F00BF5AA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC8AB13226075F0F00BF5AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC8AB13426075F0F00BF5AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC8AB1402607603400BF5AA4 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		FC8AB20D26076C7A00BF5AA4 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		FC8AB21026076E4500BF5AA4 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		FC8AB12526075F0E00BF5AA4 /* GroupedTableViewWithShadow */ = {
 			isa = PBXGroup;
 			children = (
+				FC8AB13D26075FFF00BF5AA4 /* Default Files */,
+				FC8AB13B26075FBA00BF5AA4 /* Screen */,
+				FC8AB12F26075F0F00BF5AA4 /* Assets.xcassets */,
+			);
+			path = GroupedTableViewWithShadow;
+			sourceTree = "<group>";
+		};
+		FC8AB13B26075FBA00BF5AA4 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				FC8AB1402607603400BF5AA4 /* Cell.swift */,
+				FC8AB12A26075F0E00BF5AA4 /* ViewController.swift */,
+				FC8AB20D26076C7A00BF5AA4 /* SectionView.swift */,
+				FC8AB21026076E4500BF5AA4 /* TableView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		FC8AB13D26075FFF00BF5AA4 /* Default Files */ = {
+			isa = PBXGroup;
+			children = (
 				FC8AB12626075F0E00BF5AA4 /* AppDelegate.swift */,
 				FC8AB12826075F0E00BF5AA4 /* SceneDelegate.swift */,
-				FC8AB12A26075F0E00BF5AA4 /* ViewController.swift */,
 				FC8AB12C26075F0E00BF5AA4 /* Main.storyboard */,
-				FC8AB12F26075F0F00BF5AA4 /* Assets.xcassets */,
 				FC8AB13126075F0F00BF5AA4 /* LaunchScreen.storyboard */,
 				FC8AB13426075F0F00BF5AA4 /* Info.plist */,
 			);
-			path = GroupedTableViewWithShadow;
+			path = "Default Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +163,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC8AB12B26075F0E00BF5AA4 /* ViewController.swift in Sources */,
+				FC8AB21126076E4500BF5AA4 /* TableView.swift in Sources */,
+				FC8AB1412607603400BF5AA4 /* Cell.swift in Sources */,
+				FC8AB20E26076C7A00BF5AA4 /* SectionView.swift in Sources */,
 				FC8AB12726075F0E00BF5AA4 /* AppDelegate.swift in Sources */,
 				FC8AB12926075F0E00BF5AA4 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +316,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6389Z2D8J8;
-				INFOPLIST_FILE = GroupedTableViewWithShadow/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GroupedTableViewWithShadow/Default Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +335,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6389Z2D8J8;
-				INFOPLIST_FILE = GroupedTableViewWithShadow/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GroupedTableViewWithShadow/Default Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
